@@ -5,6 +5,6 @@ npm install
 
 NodeBird - SNS 서비스(twitter clone)
 
-NodeBird API - nodebird 서버 제공
+NodeBird API - 서버
 
-NodeCat - API 사용하는 
+NodeCat - 클라이언트 
