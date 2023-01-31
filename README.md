@@ -1,11 +1,10 @@
 # Download ZIP
 npm install
 
-# 개발 환경 
-express - Nodejs
+# 프로젝트
 
-sequelize - mysql2
+NodeBird - SNS 서비스(twitter clone)
 
-nunjucks - frontend
+NodeBird API - nodebird 서버 제공
 
-axios - web API
+NodeCat - API 사용하는 
