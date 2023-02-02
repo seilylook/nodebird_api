@@ -56,3 +56,18 @@ exports.deprecated = (req, res) => {
     message: '새로운 버전이 나왔습니다. 새로운 버전을 사용하세요.',
   });
 };
+
+exports.corsWhenDomainMatches = async (req, res, next) => {
+  const domain = Domain.findOne({
+    where: { host: new URL(req.get('origin')).host },
+  });
+
+  if (domain) {
+    cors({
+      origin: req.get('origin'),
+      credential: true,
+    })(req, res, next);
+  } else {
+    next();
+  }
+};
